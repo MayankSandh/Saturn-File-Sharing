@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Sharing App</title>
+  <link rel="stylesheet" type="'text/css" href = "style.css">
+</head>
+<body>
+  <div class = "app">
+    <div class = "screen join-screen active">
+      <div class = "form">
+        <h2>Saturn - Seemless file sharing</h2>
+        <div class = "form-input">
+          <button id = "sender-start-con-btn">Create Share-link</button>
+        </div>
+        <div class = "form-input" id = "join-id">
+          <b> Room ID</b>
+          <span>000-000-000</span>
+        </div>
+      </div>
+    </div>
+    <div class = "screen fs-screen">
+      <div class = "file-input">
+        <label for="file-input">
+          Browse Files to Send
+        </label>
+        <input type = "file" id = "file-input">
+      </div>
+      <div class = "files-list">
+        <div class = "title"> Shared Files:</div>
+        <div class = "item">
+          <div class = "progress"> 0%</div>
+          <div class = "filename">Abc.txt</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type = "text/javascript" src="socket.io/socket.io.js"></script>
+  <script type = "text/javascript" src="code.js"></script>
+
+
+</body>
+</html>
